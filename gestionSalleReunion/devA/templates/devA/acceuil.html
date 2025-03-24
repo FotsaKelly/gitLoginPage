@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="icon" href="{% static 'devK/favicon.ico' %}" type="image/x-icon">
+    <title>Accueil</title>
+    <style>
+        /* Importation de la police */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        /* Réinitialisation des marges et des bordures */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Style du body */
+        body {
+            min-height: 100vh;
+            width: 100%;
+            background: linear-gradient(135deg, #009579, #00bfae);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        /* Style du conteneur principal */
+        .container {
+            max-width: 400px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            text-align: center;
+            margin: 20px;
+        }
+        
+        /* Style du titre */
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        /* Style des boutons */
+        button {
+            color: #fff;
+            background: #009579;
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        
+        /* Effet de survol pour les boutons */
+        button:hover {
+            background: #007a66;
+            transform: translateY(-2px);
+        }
+        
+        /* Effet de clic pour les boutons */
+        button:active {
+            background: #005a48;
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Bienvenue dans l'application de gestion de salle, Devk !</h2>
+        <a href="{% url 'inscription' %}"><button>S'inscrire</button></a>
+        <a href="{% url 'connexion' %}"><button>Se connecter</button></a>
+    </div>
+</body>
+</html>
