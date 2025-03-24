@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="publication.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Publication Stages</title>
+</head>
+<body>
+    <div class="formulaire">
+        <form >
+            <h2>Formulaire de Publication des Stages</h2>
+            <div class="user-details">
+            <div class="form1" >
+                <label for="description">Description du poste<span class="star">*</span></label><br>
+                <textarea id="cdescription" class="input" rows="5" cols="5" placeholder="Décrire le poste recherché" required></textarea><br><br>
+
+
+                <label for="responsabilite">Responsabilités<span class="star">*</span></label><br>
+                <textarea id="responsabilite" class="input" rows="10" cols="10" placeholder="Décrire le poste recherché" required></textarea><br><br>
+
+                <label for="compétencesRecherchées">Compétences requises<span class="star">*</span></label><br>
+                <textarea id="compétencesRecherchées" class="input" rows="10" cols="10" placeholder="Listez les compétences recherchées (ex : informatique, gestion de projet, etc.)" required></textarea><br><br>
+            
+                                
+                <label for="typeStage">Type de stage<span class="star" >*</span></label><br>
+                <select name="typeStage" id="typeStage" class="input"  style="background-color: #fff;">
+                    <option value=""></option>
+                    <option value="découverte">Stage de découverte</option>
+                    <option value="technique">Stage technique</option>
+                    <option value="finEtudes">Stage de fin d'études</option>
+                    <option value="préProfessionnel">Stage pré-professionnel</option>
+                </select><br><br>
+
+                <label for="duréeStage">Durée du stage (en mois)<span class="star">*</span></label><br>
+                <input type="number" class="input" id="duréeStage" required><br><br>
+                <label for="dateDébutStage">Date de début du stage<span class="star">*</span></label><br>
+                <input type="date" class="input" id="dateDébutStage" required><br><br>
+
+
+                
+            </div>
+            <div class="form2">
+
+             
+                <label for="dateFinStage">Date de fin du stage<span class="star">*</span></label><br>
+                <input type="date" class="input" id="dateFinStage" required><br><br>
+                <label for="nombreStagiaires">Nombre de stagiaires à recruter<span class="star">*</span></label><br>
+                <input type="number" class="input" id="nombreStagiaires" required><br><br>
+
+                <label for="lieuStage">Lieu du stage<span class="star">*</span></label><br>
+                <input type="text" class="input" id="lieuStage" placeholder="Si plusieurs sites, précisez où le stage se déroulera" required><br><br>
+
+
+                <label for="rémunérationStage">Stage rémunéré ?<span class="star">*</span></label><br>
+                <input type="radio" name="rémunérationStage" id="rémunérationStage"> Oui &nbsp;
+                <input type="radio" name="rémunérationStage" id="rémunérationStage"> Non &nbsp;
+                <br><br>
+
+                <label for="documentsSupplémentaires">Documents supplémentaires (Convention de stage, etc.)<span class="star">*</span></label><br>
+                <input type="file" class="input" id="documentsSupplémentaires" accept=".pdf, .doc, .docx" required><br>
+
+                
+                    <p class="lien"> Si le poste vous intéresse, veuillez envoyer votre CV à l'adresse <a href="">info@proxypay.africa</a></p>
+                
+                
+                <div class="button">
+                    <input type="submit" value="Envoyer">
+                </div>
+
+            
+            </div>
+            
+        </form>
+    </div>
+    
+</body>
+</html>

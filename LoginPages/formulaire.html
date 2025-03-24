@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Inscription entreprise</title>
+</head>
+<body>
+    <div class="formulaire">
+        <form >
+            <h2>FFormulaire d'inscription entreprise</h2>
+            <div class="user-details">
+            <div class="form1" >
+                <label for="nomEntreprise">Nom de l'entreprise<span class="star">*</span></label><br>
+                <input type="text" placeholder="Nom de votre entreprise" required class="input" id="nomEntreprise"><br><br>
+                
+                <label for="secteurActivite">Secteur d'activité<span class="star">*</span></label><br>
+                <input type="text" placeholder="Secteur d'activité de l'entreprise" required class="input" id="secteurActivite"><br><br>
+
+                <label for="emailEntreprise">Email de l'entreprise<span class="star">*</span></label><br>
+                <input type="email" placeholder="exemple@entreprise.com" required class="input" id="emailEntreprise"><br><br>
+
+                <label for="telephoneEntreprise">Numéro de téléphone<span class="star">*</span></label><br>
+                <input type="tel" placeholder="Numéro de téléphone" required class="input" id="telephoneEntreprise"><br><br>
+                
+                <label for="adresseEntreprise">Adresse de l'entreprise<span class="star">*</span></label><br>
+                <input type="text" placeholder="Adresse complète" required class="input" id="adresseEntreprise"><br><br>
+        
+            </div>
+            <div class="form2">
+
+                <label for="paysEntreprise">Pays de l'entreprise<span class="star">*</span></label>
+                <select name="paysEntreprise" id="paysEntreprise" class="input" style="background-color: #fff;">
+                    <option value="">Selectionner un pays</option>
+                    <option value="">Afrique du Sud</option>
+                    <option value="">Cameroun</option>
+                    <option value="">Congo</option>
+                    <option value="">Gabon</option>
+                    <option value="">Guinée équatoriale</option>
+                    <option value="">Nigeria</option>
+                    <option value="">Tchad</option>
+                </select><br><br>
+
+                <label for="ville">Ville de résidence<span class="star">*</span></label><br>
+                <input type="text" placeholder="Votre ville de résidence" required class="input" id="ville"><br><br>
+
+                <label for="typeEntreprise">Type d'entreprise<span class="star">*</span></label><br><br>
+                <div> <input type="radio" name="typeEntreprise" id="typeEntrepriseSarl"> SARL</div>
+                <input type="radio" name="typeEntreprise" id="typeEntrepriseSa"> SA
+            
+                <input type="radio" name="typeEntreprise" id="typeEntrepriseEirl"> EIRL<br><br>
+
+                <label for="logoEntreprise">Logo de l'entreprise<span class="star">*</span></label><br>
+                <input type="file" class="input" id="logoEntreprise" accept=".jpg, .jpeg, .png"><br>
+                <label for="documentStatuts">Documents (Statuts, autorisation, etc.)<span class="star">*</span></label><br>
+                <input type="file" class="input" id="documentStatuts" required accept=".pdf, .doc, .docx"><br><br><br>
+
+
+
+                
+                <div class="button">
+                    <input type="submit" value="Envoyer">
+                </div>
+
+            
+            </div>
+            
+        </form>
+    </div>
+    
+</body>
+</html>

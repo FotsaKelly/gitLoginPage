@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inscription.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Inscription étudiants</title>
+</head>
+<body>
+    <div class="formulaire">
+        <form >
+            <h2>Formulaire  d'inscription  étudiants</h2>
+            <div class="user-details">
+            <div class="form1" >
+                <label for="nomComplet">Nom Complet<span class="star">*</span></label><br>
+                <input type="text" placeholder="Votre nom" required class="input" id="nomComplet "><br><br>
+        
+                <label for="email">Email<span class="star">*</span></label><br>
+                <input type="mail" placeholder="exemple@gmail.com" required class="input" id="mail "><br><br>
+
+                <label for="tel">Téléphone<span class="star">*</span></label><br>
+                <input type="text" placeholder="Votre téléphone" required class="input" id="tel "><br><br>
+
+                <label for="niveauEtude">Niveau Etude<span class="star">*</span></label><br>
+                <input type="text" placeholder="Votre niveau d'étude" required class="input" id="niveauEtude "><br><br>
+                
+                <label for="specialisation">Domaine de Spécialisation<span class="star">*</span></label><br>
+                <input type="text" placeholder="Votre spécialisation" required class="input" id="specialisation "><br><br>
+
+                <label for="pays">Pays<span class="star">*</span></label>
+                <select name="" id="pays" class="input" style="background-color: #fff;">
+                    <option value="">Selectionner un pays</option>
+                    <option value="">Afrique du Sud</option>
+                    <option value="">Cameroun</option>
+                    <option value="">Congo</option>
+                    <option value="">Gabon</option>
+                    <option value="">Guinée équatoriale</option>
+                    <option value="">Nigeria</option>
+                    <option value="">Tchad</option>
+                </select><br><br>
+        
+            </div>
+            <div class="form2">
+
+                <label for="date">Date de Naissance<span class="star">*</span></label><br>
+                <input type="date" class="input" id="date" required> <br><br>
+
+                <label for="password">Mot de passe<span class="star">*</span></label><br>
+                <input type="password" class="input" id="password" required placeholder="Votre mot de passe"> <br><br>
+
+            
+                <label for="sexe">Pièces<span class="star">*</span></label><br>
+                <label class="label"  for="cv" >CV</label>
+                <input  type="file" class="input" id="cv" accept=".pdf, .doc, .docx"> <br><br>
+                
+                <label class="label"  for="lettreMotivation" >Lettre de Motivation</label>
+                <input type="file" class="input" id="lettreMotivation" required accept=".pdf, .doc, .docx"> <br><br>
+
+                <label for="sexe">Sexe<span class="star">*</span class="star"></label><br>
+                <select class="input" style="background-color: #fff;">
+                    <option></option>
+                    <option>Homme</option>
+                    <option>Femme</option>
+                </select>
+                <br><br>
+
+                
+                <div class="button">
+                    <input type="submit" value="Envoyer">
+                </div>
+
+            
+            </div>
+            
+        </form>
+    </div>
+    
+</body>
+</html>
